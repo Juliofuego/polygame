@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.jeder {
+  display: flex;
+  background-color: #ffcc29;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+  border-radius: 30px;
+}
+h1 {
+  font-size: large;
+}
+body {
+  background-color: rgb(30, 68, 139);
+}
+.botonsitos {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.logoyfecha {
+  display: flex;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+.minutes {
+  display: flex;
+  gap: 0.4rem;
+  font-weight: bold;
+}
+.team-card {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+  position: relative;
+  margin-top: 10rem;
+  padding: 4rem 1rem 0.9rem 1rem;
+  background-color: #495892;
+  outline: 2px solid #ffcc29;
+  border-radius: 1rem;
+  align-items: center;
+}
+.team-card img {
+  position: absolute;
+  left: calc(50%-90px);
+  top: -2.5rem;
+}
+.coin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 148px;
+  height: 149px;
+  background-repeat: no-repeat;
+  background-image: url(public/coin.png);
+  font-weight: bold;
+  font-size: 2rem;
+  color: #67a062;
+}
+.team {
+  font-size: 20px;
+  font-weight: 800;
+}
+.varicajas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+}
+.calidad {
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #8e8e8e;
+  padding: 0.4rem 2.5rem;
+  outline: 2px solid white;
+  border-radius: 1rem;
+}
+.billetes {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #67a062;
+  border-radius: 1rem;
+  padding: 0.4rem 2.5rem;
+  outline: 2px solid white;
+}
