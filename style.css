@@ -14,14 +14,15 @@
   background-color: #ffcc29;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem 0 1rem;
-  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4rem;
+  margin: 1rem;
 }
 h1 {
   font-size: large;
 }
 body {
-  background-color: rgb(30, 68, 139);
+  background-color: #495892;
 }
 .botonsitos {
   display: flex;
@@ -30,6 +31,7 @@ body {
 }
 .logoyfecha {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
   font-weight: bold;
 }
@@ -45,7 +47,6 @@ body {
   gap: 1rem;
   width: fit-content;
   position: relative;
-  margin-top: 10rem;
   padding: 4rem 1rem 0.9rem 1rem;
   background-color: #495892;
   outline: 2px solid #ffcc29;
@@ -59,15 +60,18 @@ body {
 }
 .coin {
   display: flex;
+  border-radius: 100rem;
   justify-content: center;
   align-items: center;
-  width: 148px;
-  height: 149px;
+  width: 94px;
+  height: 94px;
   background-repeat: no-repeat;
   background-image: url(public/coin.png);
+  background-size: 94px 94px;
   font-weight: bold;
-  font-size: 2rem;
-  color: #67a062;
+  font-size: 1.8rem;
+  color: #c77303;
+  cursor: pointer;
 }
 .team {
   font-size: 20px;
@@ -95,4 +99,24 @@ body {
   border-radius: 1rem;
   padding: 0.4rem 2.5rem;
   outline: 2px solid white;
+}
+
+#coin-container {
+  background-color: #364683;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+#team-container {
+  background-color: #364683;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  margin: 1rem 2rem;
+  border-radius: 1rem;
 }
