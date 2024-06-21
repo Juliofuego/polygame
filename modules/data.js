@@ -21,715 +21,719 @@ let quizes = [
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Cuál es la capital de Australia?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Sídney",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Melbourne",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Perth",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Canberra",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Quién escribió ¨Cien años de soledad¨?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Mario Vargas Llosa",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Isabel Allende",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Julio Cortázar",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Gabriel García Márquez",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Qué molécula transporta oxígeno en la sangre?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Insulina",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Glucosa",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Oxitocina",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Hemoglobina",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Cuál es el planeta más grande del sistema solar?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Marte",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Tierra",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Saturno",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Júpiter",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Quién pintó la Mona Lisa?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Vincent van Gogh",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Pablo Picasso",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Claude Monet",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Leonardo da Vinci",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿En qué año terminó la Segunda Guerra Mundial?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "1939",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "1942",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "1950",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "1945",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Cuál es el elemento químico representado por el símbolo 'O'?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Osmio",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Oro",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Plomo",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Oxígeno",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Qué país es conocido como la cuna del Renacimiento?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Francia",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Alemania",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "España",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Italia",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Qué científico propuso la teoría de la relatividad?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Isaac Newton",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Nikola Tesla",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Galileo Galilei",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Albert Einstein",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Qué país tiene la mayor cantidad de pirámides en el mundo?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Egipto",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "México",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Perú",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Sudán",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Cuál es el río más largo del mundo?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Yangtsé",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Nilo",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Misisipi",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Amazonas",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta:
+      "¿En qué año se celebraron los primeros Juegos Olímpicos modernos?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "1936",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "1900",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "1924",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "1896",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Qué instrumento musical toca Lisa Simpson?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Guitarra",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Batería",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Piano",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Saxofón",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Cuál es el océano más grande del mundo?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Atlántico",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Índico",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Ártico",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Pacífico",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Quién es el autor de la novela '1984'?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Aldous Huxley",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Ray Bradbury",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Arthur C. Clarke",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "George Orwell",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Cuál es el país más pequeño del mundo?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Mónaco",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "San Marino",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Liechtenstein",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Vaticano",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Qué día se celebra la independencia de Estados Unidos?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "1 de enero",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "14 de julio",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "25 de diciembre",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "4 de julio",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Qué sustancia se utiliza para inflar globos que flotan?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Hidrógeno",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Oxígeno",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Nitrógeno",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Helio",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Cuál es el único mamífero que puede volar?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Pteropus",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Ardilla voladora",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Colugo",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Murciélago",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿En qué continente se encuentra la cordillera de los Andes?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Asia",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "África",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Europa",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "América",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Cuál es el metal más abundante en la corteza terrestre?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Hierro",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Oro",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Cobre",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Aluminio",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Cuál es el país más grande del mundo por área?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Canadá",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "China",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Estados Unidos",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Rusia",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Qué artista es conocido como el 'Rey del Pop'?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Elvis Presley",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Prince",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Justin Timberlake",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Michael Jackson",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Qué estructura en París es conocida como la 'Dama de Hierro'?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Notre Dame",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Arco del Triunfo",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Louvre",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Torre Eiffel",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta:
+      "¿Qué vitamina es producida por el cuerpo cuando la piel está expuesta al sol?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Vitamina A",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Vitamina C",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Vitamina E",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Vitamina D",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta:
+      "¿Qué año marcó el inicio de la Gran Depresión en Estados Unidos?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "1914",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "1920",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "1935",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "1929",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Cuál es la lengua más hablada en el mundo?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Español",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Hindi",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Inglés",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Mandarín",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿En qué país se originaron los Juegos Olímpicos antiguos?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Roma",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Egipto",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Persia",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Grecia",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Cuál es la capital de Canadá?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Toronto",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Vancouver",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Montreal",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Ottawa",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta:
+      "¿Qué científico desarrolló la teoría de la evolución por selección natural?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Gregor Mende",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Louis Pasteur",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Alfred Wallace",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Charles Darwin",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Qué famoso físico es conocido por su ecuación E=mc²?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Niels Bohr",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Max Planck",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Richard Feynman",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Albert Einstein",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Cuál es el desierto más grande del mundo?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Desierto del Sahara",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Desierto de Gobi",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Desierto de Kalahari",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Desierto de la Antártida",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Qué isla es la más grande del mundo?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Madagascar",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Nueva Guinea",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Borneo",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Groenlandia",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¿Qué país es famoso por su fiesta del Oktoberfest?",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "Austria",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Suiza",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Bélgica",
         correcta: false,
       },
       {
-        respuesta: "",
+        respuesta: "Alemania",
         correcta: true,
       },
     ],
