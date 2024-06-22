@@ -1,5 +1,6 @@
-import { getQuizes } from "./modules/coin.js";
-import { getTeams, setCrown } from "./modules/team-card.js";
+import { generateQuizes } from "./modules/coin.js";
+import { quizes, teams } from "./modules/data.js";
+import { renderTeams, setCrown } from "./modules/team-card.js";
 
 let fechaElement = document.getElementById("fecha");
 fechaElement.innerHTML = new Date().toLocaleDateString();
@@ -14,6 +15,11 @@ setInterval(() => {
   `;
 }, 1000);
 
-setCrown();
-getQuizes();
-getTeams();
+setCrown(teams);
+renderTeams(teams);
+
+generateQuizes(quizes, teams);
+
+// let dialog = document.getElementById("dialog");
+
+// dialog.showModal();
