@@ -27,7 +27,7 @@ export function teamCardComponent(team) {
         ? `
       <img
         class="corona"
-        src="/public/corona.png"
+        src="public/corona.png"
         alt="${team.name}"
         height="60"
         width="60"
@@ -37,7 +37,7 @@ export function teamCardComponent(team) {
     }
       <img
         class="gallinita"
-        src="/public/${team.imagen}"
+        src="public/${team.imagen}"
         alt="${team.name}"
         height="90"
         width="90"
