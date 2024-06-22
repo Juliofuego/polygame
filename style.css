@@ -36,6 +36,7 @@ body {
   font-weight: bold;
 }
 .minutes {
+  width: 120px;
   display: flex;
   gap: 0.4rem;
   font-weight: bold;
@@ -53,10 +54,18 @@ body {
   border-radius: 1rem;
   align-items: center;
 }
-.team-card img {
+.team-card .gallinita {
   position: absolute;
+  outline: 2px solid #ffcc29;
+  border-radius: 1.2rem;
   left: calc(50%-90px);
   top: -2.5rem;
+}
+.team-card .corona {
+  z-index: 1;
+  position: absolute;
+  left: calc(50%-60px);
+  top: -5.2rem;
 }
 .coin {
   display: flex;
@@ -117,6 +126,71 @@ body {
   justify-content: center;
   gap: 1rem;
   padding: 2rem;
-  margin: 1rem 2rem;
+  margin: 2rem 2rem;
   border-radius: 1rem;
+}
+
+dialog {
+  background-color: #072967e8;
+  color: white;
+  padding: 2rem 2rem;
+  margin: auto;
+  border: 2px solid #ffcc29;
+  border-radius: 1rem;
+}
+
+::backdrop {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.3;
+}
+
+.papap {
+  display: flex;
+  gap: 1rem;
+}
+
+.papap .pregunta {
+  width: 400px;
+  margin: 0 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.papap button {
+  border: none;
+  color: white;
+  background-color: #041654;
+  font-size: 2rem;
+  padding: 1rem 6rem;
+  border-radius: 3rem;
+}
+
+.papap button:hover {
+  cursor: pointer;
+  background-color: #5875d8;
+}
+
+.papap .options {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.papap .cajita {
+  justify-content: space-between;
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.papap .cajita .counter {
+  color: #c2c6e4;
+  background-color: #041654;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 2rem;
+  align-items: center;
+  display: flex;
+  width: fit-content;
 }
