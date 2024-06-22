@@ -1,6 +1,4 @@
-import { teams } from "./data.js";
-
-export function setCrown() {
+export function setCrown(teams) {
   let winningTeam = teams[0];
 
   teams.forEach((currentTeam) => {
@@ -9,17 +7,15 @@ export function setCrown() {
     }
   });
 
-  winningTeam.ganando = true;
+  if (winningTeam.dinero === 50) {
+    winningTeam = undefined;
+  } else {
+    winningTeam.ganando = true;
+  }
 }
 
-export function getTeams() {
-  let teamContainer = document.getElementById("team-container");
-
-  teams.forEach((team) => {
-    let teamCard = document.createElement("div");
-    teamCard.className = "team-card";
-
-    teamCard.innerHTML = `
+export function teamCardComponent(team) {
+  return `
     ${
       team.ganando
         ? `
@@ -40,13 +36,22 @@ export function getTeams() {
         height="90"
         width="90"
       />
-      <p class="team">
-        ${team.nombre}
-      </p>
+      ${
+        team.turno
+          ? `<p style="color: #ffcc41;" class="team">🪙 Tu turno 🪙</p>`
+          : `<p class="team">${team.nombre}</p>`
+      }
+  
       <div class="varicajas">
-        <div class="billetes" id="billetos">
+       ${
+         team.dinero < 0
+           ? `<div style="background: #9D4949;" class="billetes" id="billetos">
+          <p>Tiene -$<span id="pesos">${Math.abs(team.dinero)}</span></p>
+        </div>`
+           : `<div class="billetes" id="billetos">
           <p>Tiene $<span id="pesos">${team.dinero}</span></p>
-        </div>
+        </div>`
+       }
         ${
           team.racha === 0
             ? '<div style="background: #638DEA;" class="calidad" id="rasgo"><p>Normal</p></div>'
@@ -57,6 +62,21 @@ export function getTeams() {
         }
       </div>
     `;
+}
+
+export function renderTeams(teams) {
+  let teamContainer = document.getElementById("team-container");
+  teamContainer.innerHTML = "";
+
+  teams.forEach((team) => {
+    let teamCard = document.createElement("div");
+    teamCard.className = "team-card";
+
+    if (team.turno) {
+      teamCard.classList.add("turno");
+    }
+
+    teamCard.innerHTML = teamCardComponent(team);
     teamContainer.appendChild(teamCard);
   });
 }
