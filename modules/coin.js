@@ -1,13 +1,14 @@
 import { renderTeams, teamCardComponent } from "./team-card.js";
+import { teams } from "./data.js";
 import { shuffle } from "./utils.js";
 
+let currentTeam = teams.find((team) => team.turno);
 let dialog = document.getElementById("dialog");
 // dialog.style.display = "none";
 
-export function generateQuizes(quizes, teams) {
+export function generateQuizes(quizes) {
   let coinContainer = document.getElementById("coin-container");
   let bountyElement = document.getElementById("bounty-ammount");
-  let currentTeam = teams.find((team) => team.turno);
 
   shuffle(quizes).forEach((quiz, index) => {
     let coinElement = document.createElement("div");
@@ -18,12 +19,13 @@ export function generateQuizes(quizes, teams) {
     coinElement.addEventListener("click", () => {
       dialog.style.display = "flex";
       dialog.classList.add("papap");
+      dialog.classList.remove("good");
       dialog.innerHTML = `
       <div class="cajita">
         <p class="pregunta">${quiz.pregunta}</p>
         <div class="counter">
           <p id="time-limit"></p>
-          <img src="/public/Relo.png" alt="reloj" width="40" height="40" />
+          <img src="/public/relo.png" alt="reloj" width="40" height="40" />
         </div>
       </div>
       <div id="responses" class="options">
@@ -38,8 +40,22 @@ export function generateQuizes(quizes, teams) {
         timeLimit--;
         timeLimitElement.innerHTML = timeLimit;
         if (timeLimit === 0) {
-          clearInterval(interval);
           dialog.close();
+          currentTeam.dinero -= 5;
+          currentTeam.racha = -1;
+
+          currentTeam.turno = false;
+
+          teams[
+            teams.indexOf(currentTeam) + 1 < teams.length
+              ? teams.indexOf(currentTeam) + 1
+              : 0
+          ].turno = true;
+
+          currentTeam = teams.find((team) => team.turno);
+
+          renderTeams(teams);
+          bountyElement.innerText = parseInt(bountyElement.innerText) + 5;
         }
       }, 1000);
 
@@ -53,6 +69,7 @@ export function generateQuizes(quizes, teams) {
             clearInterval(interval);
             coinElement.style.display = "none";
             dialog.classList.add("good");
+            dialog.classList.remove("papap");
             dialog.innerHTML = `
               <p class="good-title">¡Correcto!</p>
               <p class="good-text">¿A qué equipo le quitas 5 billetes?</p>
@@ -71,12 +88,21 @@ export function generateQuizes(quizes, teams) {
                 teamCard.addEventListener("click", () => {
                   dialog.close();
 
-                  currentTeam.dinero += 5;
-                  team.dinero -= 5;
+                  currentTeam.dinero += 5 + parseInt(bountyElement.innerText);
                   currentTeam.racha += 1;
 
+                  bountyElement.innerText = 0;
+                  team.dinero -= 5;
+
                   currentTeam.turno = false;
-                  team.turno = true;
+
+                  teams[
+                    teams.indexOf(currentTeam) + 1 < teams.length
+                      ? teams.indexOf(currentTeam) + 1
+                      : 0
+                  ].turno = true;
+
+                  currentTeam = teams.find((team) => team.turno);
 
                   renderTeams(teams);
                 });
@@ -87,7 +113,22 @@ export function generateQuizes(quizes, teams) {
           } else {
             dialog.close();
             currentTeam.dinero -= 5;
-            currentTeam.racha -= 1;
+            currentTeam.racha = -1;
+
+            currentTeam.turno = false;
+
+            teams[
+              teams.indexOf(currentTeam) + 1 < teams.length
+                ? teams.indexOf(currentTeam) + 1
+                : 0
+            ].turno = true;
+
+            currentTeam = teams.find((team) => team.turno);
+
+            if (quiz.pregunta.startsWith("¡Comodín malo!")) {
+              coinElement.style.display = "none";
+            }
+
             renderTeams(teams);
             bountyElement.innerText = parseInt(bountyElement.innerText) + 5;
           }
