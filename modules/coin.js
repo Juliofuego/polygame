@@ -25,7 +25,7 @@ export function generateQuizes(quizes) {
         <p class="pregunta">${quiz.pregunta}</p>
         <div class="counter">
           <p id="time-limit"></p>
-          <img src="public/relo.png" alt="reloj" width="40" height="40" />
+          <img src="public/reloj.png" alt="reloj" width="40" height="40" />
         </div>
       </div>
       <div id="responses" class="options">
