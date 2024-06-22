@@ -1,13 +1,19 @@
-export function setCrown(teams) {
+function setCrown(teams) {
   let winningTeam = teams[0];
 
   teams.forEach((currentTeam) => {
     if (currentTeam.dinero > winningTeam.dinero) {
+      winningTeam.ganando = false;
       winningTeam = currentTeam;
     }
   });
 
-  if (winningTeam.dinero === 50) {
+  if (
+    teams[0].dinero === teams[1].dinero ||
+    teams[0].dinero === teams[2].dinero ||
+    teams[1].dinero === teams[2].dinero
+  ) {
+    winningTeam.ganando = false;
     winningTeam = undefined;
   } else {
     winningTeam.ganando = true;
@@ -58,15 +64,22 @@ export function teamCardComponent(team) {
             : team.racha >= 1
             ? `<div style="background: #B8A336;" class="calidad" id="rasgo"><p>Racha de ${team.racha}</p></div>`
             : team.racha <= -1 &&
-              `<div style="background: #9D4949;" class="calidad" id="rasgo"><p>Perdedores</p></div>`
+              `<div style="background: #9D4949;" class="calidad" id="rasgo"><p>Ignorantes</p></div>`
         }
       </div>
     `;
 }
 
+let teamContainer = document.getElementById("team-container");
+let teamCardsComponent = document.createElement("div");
+teamCardsComponent.style.display = "flex";
+teamCardsComponent.style.gap = "2rem";
+
+teamContainer.appendChild(teamCardsComponent);
+
 export function renderTeams(teams) {
-  let teamContainer = document.getElementById("team-container");
-  teamContainer.innerHTML = "";
+  setCrown(teams);
+  teamCardsComponent.innerHTML = "";
 
   teams.forEach((team) => {
     let teamCard = document.createElement("div");
@@ -77,6 +90,6 @@ export function renderTeams(teams) {
     }
 
     teamCard.innerHTML = teamCardComponent(team);
-    teamContainer.appendChild(teamCard);
+    teamCardsComponent.appendChild(teamCard);
   });
 }
