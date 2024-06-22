@@ -1,10 +1,10 @@
 export let teams = [
   {
-    imagen: "mapachico.png",
-    nombre: "Team Mapaches",
+    imagen: "gallinita.png",
+    nombre: "Team Pollos",
     dinero: 50,
     racha: 0,
-    turno: false,
+    turno: true,
     ganando: false,
   },
   {
@@ -16,11 +16,11 @@ export let teams = [
     ganando: false,
   },
   {
-    imagen: "gallinita.png",
-    nombre: "Team Pollos",
+    imagen: "mapachico.png",
+    nombre: "Team Mapaches",
     dinero: 50,
     racha: 0,
-    turno: true,
+    turno: false,
     ganando: false,
   },
 ];
@@ -785,11 +785,11 @@ export let quizes = [
     ],
   },
   {
-    pregunta: "¡Comodín bueno! 5 billetes gratis.",
+    pregunta: "¡Comodín malo! pierdes 5 billetes.",
     respuestas: [
       {
-        respuesta: "¡Gracias!",
-        correcta: true,
+        respuesta: "OK.",
+        correcta: false,
       },
     ],
   },
