@@ -123,11 +123,54 @@ body {
 #team-container {
   background-color: #364683;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   padding: 2rem;
-  margin: 2rem 2rem;
+  margin: 3rem 2rem;
   border-radius: 1rem;
+  align-items: center;
+}
+
+.bounty-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin-left: 1rem;
+  padding: 4rem 1rem 0.9rem 1rem;
+  background-color: #495892;
+  outline: 2px solid #ffcc29;
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.bounty-box img {
+  position: absolute;
+  border-radius: 1.2rem;
+  left: calc(50%-120px);
+  top: -4rem;
+}
+
+.bounty-box div {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #fcd015;
+  border-radius: 1rem;
+  padding: 0.4rem 3em;
+  outline: 2px solid white;
+}
+
+.turno {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #ffcc29;
+}
+
+.turno .gallinita {
+  box-shadow: 0px 0px 10px 5px #ffcc29;
 }
 
 dialog {
@@ -147,6 +190,28 @@ dialog {
 .papap {
   display: flex;
   gap: 1rem;
+}
+
+.good {
+  display: flex;
+  padding: 2rem 12rem;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+.good .good-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.good .good-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#team-cards {
+  display: flex;
+  gap: 4rem;
 }
 
 .papap .pregunta {
