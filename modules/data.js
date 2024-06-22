@@ -746,6 +746,7 @@ export let quizes = [
     respuestas: [
       {
         respuesta: "Austria",
+        comodin: "bueno",
         correcta: false,
       },
       {
@@ -763,107 +764,47 @@ export let quizes = [
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¡Comodín bueno! 5 billetes gratis.",
     respuestas: [
       {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
+        respuesta: "¡Gracias!",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¡Comodín bueno! 5 billetes gratis.",
     respuestas: [
       {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
+        respuesta: "¡Gracias!",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¡Comodín bueno! 5 billetes gratis.",
     respuestas: [
       {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
+        respuesta: "¡Gracias!",
         correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¡Comodín malo! pierdes 5 billetes.",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "OK.",
         correcta: false,
-      },
-      {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
-        correcta: true,
       },
     ],
   },
   {
-    pregunta: "",
+    pregunta: "¡Comodín malo! pierdes 5 billetes.",
     respuestas: [
       {
-        respuesta: "",
+        respuesta: "OK.",
         correcta: false,
-      },
-      {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
-        correcta: false,
-      },
-      {
-        respuesta: "",
-        correcta: true,
       },
     ],
   },
